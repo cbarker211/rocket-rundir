@@ -1,3 +1,36 @@
+#  This run directory was created with:
+#  /lustre/home/ucfacb0/GCClassic_v14_3_0/src/GEOS-Chem/run/GCClassic/createRunDir.sh.
+# 
+#  GEOS-Chem repository version information:
+# 
+#   Remote URL: https://github.com/geoschem/geos-chem.git
+#   Branch: feature/al2o3-update
+#   Commit: Updates to make RRTMG work. RT array lengths reduced by 1 and al2o3 skipped.
+#   Date: Mon Feb 26 11:30:57 2024 +0000
+#   User: Connor Barker
+#   Hash: 70add4866
+# 
+# 
+# Changes to the following run directory files are tracked by git:
+# 
+#  [main (root-commit) 8de0ef2] Initial run directory
+#  13 files changed, 13906 insertions(+)
+#  create mode 100644 CreateRunDirLogs/rundir_vars.txt
+#  create mode 100644 HEMCO_Config.rc
+#  create mode 100644 HEMCO_Config.rc.gmao_metfields
+#  create mode 100644 HEMCO_Diagn.rc
+#  create mode 100644 HISTORY.rc
+#  create mode 100755 archiveRun.sh
+#  create mode 100755 cleanRunDir.sh
+#  create mode 100755 download_data.py
+#  create mode 100644 download_data.yml
+#  create mode 100644 geoschem_config.yml
+#  create mode 100755 getRunInfo
+#  create mode 100755 metrics.py
+#  create mode 100644 species_database.yml
+# 
+# 
+#  IMPORTANT: ONLY USE THESE RUNDIR SETTINGS WITH THIS COMMIT!
 RUNDIR_GC_MODE='GCClassic'
 RUNDIR_DATA_ROOT=/shared/ucl/depts/uptrop/uclgcfs/gcgrid/gcdata/ExtData
 RUNDIR_SIM_NAME=fullchem
