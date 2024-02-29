@@ -9,8 +9,6 @@ tracerinfo.dat
 geos
 core.*
 initial_GEOSChem_rst*
-GEOSChem.Restart.*
-HEMCO_restart.*
 OutputDir/GEOSChem.*nc4*
 OutputDir/HEMCO_diagnostics*
 CodeDir
@@ -22,5 +20,5 @@ rundir.version
 runScriptSamples
 README
 compile_gcclassic*
-run_gclassic*
+run_gcclassic*
 build_info
