@@ -134,8 +134,8 @@ METDIR:   /shared/ucl/depts/uptrop/uclgcfs/gcgrid/gcdata/ExtData/GEOS_4x5/MERRA2
 #==============================================================================
 (((LightNOx
 (((.not.LightningClimatology
-* FLASH_DENS $ROOT/OFFLINE_LIGHTNING/v2020-03/MERRA2/$YYYY/FLASH_CTH_MERRA2_0.5x0.625_$YYYY_$MM.nc4  LDENS 1980-2021/1-12/1-31/0-23/+90minute RFY3 xy  1  * -  1 1
-* CONV_DEPTH $ROOT/OFFLINE_LIGHTNING/v2020-03/MERRA2/$YYYY/FLASH_CTH_MERRA2_0.5x0.625_$YYYY_$MM.nc4  CTH   1980-2021/1-12/1-31/0-23/+90minute RFY3 xy  1  * -  1 1
+* FLASH_DENS $ROOT/OFFLINE_LIGHTNING/v2020-03/MERRA2/$YYYY/FLASH_CTH_MERRA2_0.5x0.625_$YYYY_$MM.nc4  LDENS 1980-2022/1-12/1-31/0-23/+90minute RFY3 xy  1  * -  1 1
+* CONV_DEPTH $ROOT/OFFLINE_LIGHTNING/v2020-03/MERRA2/$YYYY/FLASH_CTH_MERRA2_0.5x0.625_$YYYY_$MM.nc4  CTH   1980-2022/1-12/1-31/0-23/+90minute RFY3 xy  1  * -  1 1
 ))).not.LightningClimatology
 
 (((LightningClimatology
