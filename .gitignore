@@ -27,3 +27,4 @@ compile_gcclassic*
 run_gcclassic*
 build_info
 Heating_Baseline
+Restarts/**/GEOSChem.Restart.*

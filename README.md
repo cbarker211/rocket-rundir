@@ -30,3 +30,14 @@ Initial 5 month spinup with v14.3.0 chemistry (no alumina additions) and v14.1.1
     - Updated restart and output locations to the spinup folders. Aerosol and ConcAfterChem collections turned on.
   - Restart files
     - Copied from the the spinup rundir for 20190801. Made copies so I can manually add new species.
+
+Two simulations running together - Baseline and Rockets.
+  - Baseline outputs the DynHeating collection, which the rocket simulations require for RRTMG stratospheric adjustment.
+  - Symbolic link in main folder points here (see https://github.com/geoschem/geos-chem/pull/2010)
+
+b01/r01
+  - January 2020
+
+b02
+  - February 2020 - January 2021.
+  - Changed HEMCO log file and geoschem date range.
