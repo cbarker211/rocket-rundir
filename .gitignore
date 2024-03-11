@@ -9,8 +9,12 @@ tracerinfo.dat
 geos
 core.*
 initial_GEOSChem_rst*
-OutputDir/GEOSChem.*nc4*
-OutputDir/HEMCO_diagnostics*
+OutputDir/Baseline/GEOSChem.*nc4*
+OutputDir/Rockets/GEOSChem.*nc4*
+OutputDir/Spinup/GEOSChem.*nc4*
+OutputDir/Baseline/HEMCO_diagnostics*
+OutputDir/Rockets/HEMCO_diagnostics*
+OutputDir/Spinup/HEMCO_diagnostics*
 CodeDir
 build
 Plots
@@ -22,3 +26,4 @@ README
 compile_gcclassic*
 run_gcclassic*
 build_info
+Heating_Baseline

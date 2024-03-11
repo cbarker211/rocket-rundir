@@ -45,6 +45,24 @@ AERI:
   WD_KcScaleFac: [1.0, 0.5, 1.0]
   WD_RainoutEff: [1.0, 0.0, 1.0]
   WD_RainoutEff_Luo: [0.4, 0.0, 1.0]
+AL2O3:
+  DD_DvzAerSnow: 0.03
+  DD_DvzMinVal: [0.01, 0.01]
+  DD_F0: 0.0
+  DD_Hstar: 0.0
+  Density: 3970.0
+  Formula: AL2O3
+  FullName: Alumina
+  Is_Advected: true
+  Is_Aerosol: true
+  Is_DryDep: true
+  Is_HygroGrowth: true
+  Is_WetDep: true
+  MW_g: 101.96
+  Radius: 1.4e-7
+  WD_AerScavEff: 1.0
+  WD_KcScaleFac: [1.0, 1.0, 1.0]
+  WD_RainoutEff: [1.0, 1.0, 0.0]
 ALD2:
   DD_F0: 1.0
   DD_Hstar: 1.1e+1
