@@ -31,13 +31,24 @@ Initial 5 month spinup with v14.3.0 chemistry (no alumina additions) and v14.1.1
   - Restart files
     - Copied from the the spinup rundir for 20190801. Made copies so I can manually add new species.
 
-Two simulations running together - Baseline and Rockets.
+Three simulations running together - Baseline (b), Rockets (r), and SMC (s).
   - Baseline outputs the DynHeating collection, which the rocket simulations require for RRTMG stratospheric adjustment.
   - Symbolic link in main folder points here (see https://github.com/geoschem/geos-chem/pull/2010)
+  - Rockets/SMC input the DynHeating files, added to HEMCO_Config.rc.gmao_metfields
 
-b01/r01
+b01/r01/s01
   - January 2020
 
-b02
-  - February 2020 - January 2021.
+b02/r02
+  - February 2020 - May 2020.
   - Changed HEMCO log file and geoschem date range.
+
+b03/r03
+  - Up to Dec 2020 (want to make sure if there are any issues heading into 2021 that we don't have to rerun the whole thing.)
+  - Changed HEMCO log file and geoschem date range.
+  - Updated GMD_SFC_CH4 with new files up to end of 2022.
+
+b04/r04
+  - Dec 2020 - Jun 2021
+  - Changed HEMCO log file and geoschem date range.
+  - Added RRTMG output for O3T and H2O to HISTORY.rc

@@ -10,7 +10,7 @@
 ===> netCDF file compression   : SUPPORTED
 ===> Luo et al (2019) wetdep?  : OFF
 
-===> SIMULATION START TIME: 2024/03/06 12:18 <===
+===> SIMULATION START TIME: 2024/03/15 16:54 <===
 
 ===============================================================================
 G E O S - C H E M   U S E R   I N P U T
@@ -17251,7 +17251,7 @@ HEMCO: Opening /shared/ucl/depts/uptrop/uclgcfs/gcgrid/gcdata/ExtData/HEMCO/OFFL
 %%%%%       script "metrics.py" in this run directory.      %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-===> SIMULATION END TIME: 2024/03/06 17:24 <===
+===> SIMULATION END TIME: 2024/03/15 22:42 <===
 
 
 **************   E N D   O F   G E O S -- C H E M   **************
