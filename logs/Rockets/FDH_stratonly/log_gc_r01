@@ -10,7 +10,7 @@
 ===> netCDF file compression   : SUPPORTED
 ===> Luo et al (2019) wetdep?  : OFF
 
-===> SIMULATION START TIME: 2024/04/23 16:00 <===
+===> SIMULATION START TIME: 2024/03/15 17:06 <===
 
 ===============================================================================
 G E O S - C H E M   U S E R   I N P U T
@@ -148,7 +148,7 @@ All-sky flux?               :     T
 CO2 VMR in ppmv             :     T
 Fixed dyn. heat. assumption?:     T
  --> Seasonal evolution?    :     F
- --> Extend to TOA?         :     T
+ --> Extend to TOA?         :     F
  --> Read in dyn. heating?  :     T
 
 OBSPACK SETTINGS
@@ -18300,7 +18300,7 @@ HEMCO: Opening ./Heating_Baseline/GEOSChem.DynHeating.20200131_2100z.nc4
 %%%%%       script "metrics.py" in this run directory.      %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-===> SIMULATION END TIME: 2024/04/23 20:35 <===
+===> SIMULATION END TIME: 2024/03/16 01:30 <===
 
 
 **************   E N D   O F   G E O S -- C H E M   **************

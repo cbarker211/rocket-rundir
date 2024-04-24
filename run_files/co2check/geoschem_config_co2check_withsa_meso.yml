@@ -11,7 +11,7 @@
 simulation:
   name: fullchem
   start_date: [20200101, 000000]
-  end_date: [20200201, 000000]
+  end_date: [20200102, 000000]
   root_data_dir: /shared/ucl/depts/uptrop/uclgcfs/gcgrid/gcdata/ExtData
   met_field: MERRA2
   species_database_file: ./species_database.yml
@@ -114,7 +114,7 @@ operations:
     seasonal_fdh: false
     fdh_to_toa: true
     read_dyn_heating: true
-    co2_ppmv: 390.0
+    co2_ppmv: 490.0
 
   transport:
     gcclassic_tpcore:                 # GEOS-Chem Classic only

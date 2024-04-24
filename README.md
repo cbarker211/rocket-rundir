@@ -52,3 +52,29 @@ b04/r04
   - Dec 2020 - Jun 2021
   - Changed HEMCO log file and geoschem date range.
   - Added RRTMG output for O3T and H2O to HISTORY.rc
+
+b05/r05
+  - Jul 2021 - Dec 2021
+  - Changed HEMCO log file and geoschem date range.
+
+b06/r06
+  - Jan 2022 - Jun 2022
+  - Changed HEMCO log file and geoschem date range.
+
+b07/r07
+  - Jul 2022 - Nov 2022
+  - Changed HEMCO log file and geoschem date range.
+
+b08/r08
+  - Dec 2022
+  - Changed HEMCO log file and geoschem date range.
+  - Updated LightNox code from RFY3 to CY in HEMCO_Config.rc.gmao_metfields.
+  - Offline Dust code changed from EFY to CY in HEMCO_Config.rc.
+  - Rockets code changed from EFY to C in HEMCO_Config.rc.
+
+Realised after running for the full three years that there was a bug in the emission inventories,
+where some stage mass for Atlas had been massively inflated. So had to re-run from r03 onwards. 
+
+co2check
+  - This was to make sure the stratospheric adjustment was working correctly.
+  - Perturbation of +100 ppmv CO2, without SA, with SA and with SA up to TOA.
