@@ -112,8 +112,8 @@ operations:
     all_sky_flux: true
     fixed_dyn_heating: true
     seasonal_fdh: false
-    fdh_to_toa: true
-    read_dyn_heating: true
+    fdh_to_toa: false
+    read_dyn_heating: false
     co2_ppmv: 390.0
 
   transport:

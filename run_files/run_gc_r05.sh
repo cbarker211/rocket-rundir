@@ -6,9 +6,9 @@
 #$ -S /bin/bash
 #$ -l h_rt=72:00:00
 #$ -l mem=1G
-#$ -N r01
+#$ -N r05
 #$ -j y  
-#$ -pe smp 32
+#$ -pe smp 36
 #$ -V -cwd
 #$ -P hpc.10
 #$ -l paid=1
@@ -41,17 +41,14 @@ export OMP_STACKSIZE=512M
 # Set up dependencies:
 ln -sf ./HEMCO_Config.rc.gmao_metfields_r01 HEMCO_Config.rc.gmao_metfields
 ln -sf ./species_database_alumina.yml species_database.yml
-ln -sf ./geoschem_config_r01.yml geoschem_config.yml
-ln -sf ./HEMCO_Config_r01.rc HEMCO_Config.rc
-ln -sf ./HISTORY_r01.rc HISTORY.rc
+ln -sf ./geoschem_config_r05.yml geoschem_config.yml
+ln -sf ./HEMCO_Config_r05.rc HEMCO_Config.rc
+ln -sf ./HISTORY_r04.rc HISTORY.rc
 
 
 # Pipe output to log file only:
-./gcclassic > ./logs/Rockets/log_gc_r01
-#./gcclassic --dryrun > ./logs/Rockets/log_gc_r01_dryrun
-
-# Move HEMCO restart file.
-mv ./Restarts/HEMCO_restart.* ./Restarts/Rockets
+./gcclassic > ./logs/Rockets/log_gc_r05
+#./gcclassic --dryrun > ./logs/Rockets/log_gc_r05_dryrun
 
 # Clean up:
 unset id
