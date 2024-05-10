@@ -8,7 +8,7 @@
 #$ -l mem=1G
 #$ -N r08
 #$ -j y  
-#$ -pe smp 24
+#$ -pe smp 22
 #$ -V -cwd
 #$ -P hpc.10
 #$ -l paid=1
@@ -47,8 +47,12 @@ ln -sf ./HISTORY_r04.rc HISTORY.rc
 
 
 # Pipe output to log file only:
-./gcclassic > ./logs/Rockets/log_gc_r08
-#./gcclassic --dryrun > ./logs/Rockets/log_gc_r08_dryrun
+./gcclassic > ./logs/Rockets/no_SA/log_gc_r08
+#./gcclassic --dryrun > ./logs/Rockets/no_SA/log_gc_r08_dryrun
+
+# Move HEMCO restart file.
+mv ./Restarts/HEMCO_restart.* ./Restarts/Rockets/FDH_stratonly
+
 # Clean up:
 unset id
 unset nodename

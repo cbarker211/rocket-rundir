@@ -30,7 +30,7 @@ GCAPSCENARIO:                not_used
 GCAPVERTRES:                 47
 Logfile:                     HEMCO_r08.log
 DiagnFile:                   HEMCO_Diagn.rc
-DiagnPrefix:                 ./OutputDir/Rockets/HEMCO_diagnostics
+DiagnPrefix:                 ./OutputDir/Rockets/no_SA/HEMCO_diagnostics
 DiagnFreq:                   Monthly
 Wildcard:                    *
 Separator:                   /
@@ -3279,10 +3279,10 @@ VerboseOnCores:              root       # Accepted values: root all
 (((SoilNOx
 104 DEP_RESERVOIR_DEFAULT $ROOT/SOILNOX/v2014-07/DepReservoirDefault.nc                 DEP_RESERVOIR 2013/7/1/0        C  xy kg/m3 NO - 1 1
 (((HEMCO_RESTART
-104 PFACTOR               ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           PFACTOR       $YYYY/$MM/$DD/$HH EY xy 1     NO - 1 1
-104 DRYPERIOD             ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           DRYPERIOD     $YYYY/$MM/$DD/$HH EY xy 1     NO - 1 1
-104 GWET_PREV             ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           GWET_PREV     $YYYY/$MM/$DD/$HH EY xy 1     NO - 1 1
-104 DEP_RESERVOIR         ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           DEP_RESERVOIR $YYYY/$MM/$DD/$HH EY xy kg/m3 NO - 1 1
+104 PFACTOR               ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           PFACTOR       $YYYY/$MM/$DD/$HH EY xy 1     NO - 1 1
+104 DRYPERIOD             ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           DRYPERIOD     $YYYY/$MM/$DD/$HH EY xy 1     NO - 1 1
+104 GWET_PREV             ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           GWET_PREV     $YYYY/$MM/$DD/$HH EY xy 1     NO - 1 1
+104 DEP_RESERVOIR         ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                           DEP_RESERVOIR $YYYY/$MM/$DD/$HH EY xy kg/m3 NO - 1 1
 )))HEMCO_RESTART
 104 SOILNOX_FERT          $ROOT/SOILNOX/v2014-07/soilNOx.fert_res.generic.05x05.nc      FERT          2000/1-12/1-31/0  C  xy kg/m3 NO - 1 1
 104 SOILNOX_LANDK1        $ROOT/SOILNOX/v2014-07/soilNOx.landtype.generic.025x025.1L.nc LANDFRAC_K01  2000/1/1/0        C  xy 1     NO - 1 1
@@ -3380,11 +3380,11 @@ VerboseOnCores:              root       # Accepted values: root all
 #==============================================================================
 (((MEGAN
 (((HEMCO_RESTART
-108  T_DAVG                       ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                T_DAVG                  $YYYY/$MM/$DD/$HH EY xy K        * - 1 1
-108  T_PREVDAY                    ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                T_PREVDAY               $YYYY/$MM/$DD/$HH EY xy K        * - 1 1
-108  LAI_PREVDAY                  ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                LAI_PREVDAY             $YYYY/$MM/$DD/$HH EY xy 1        * - 1 1
-108  PARDR_DAVG                   ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                PARDR_DAVG              $YYYY/$MM/$DD/$HH EY xy W/m2     * - 1 1
-108  PARDF_DAVG                   ./Restarts/Rockets/HEMCO_restart.$YYYY$MM$DD$HH00.nc                PARDF_DAVG              $YYYY/$MM/$DD/$HH EY xy W/m2     * - 1 1
+108  T_DAVG                       ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                T_DAVG                  $YYYY/$MM/$DD/$HH EY xy K        * - 1 1
+108  T_PREVDAY                    ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                T_PREVDAY               $YYYY/$MM/$DD/$HH EY xy K        * - 1 1
+108  LAI_PREVDAY                  ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                LAI_PREVDAY             $YYYY/$MM/$DD/$HH EY xy 1        * - 1 1
+108  PARDR_DAVG                   ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                PARDR_DAVG              $YYYY/$MM/$DD/$HH EY xy W/m2     * - 1 1
+108  PARDF_DAVG                   ./Restarts/Rockets/FDH_stratonly/HEMCO_restart.$YYYY$MM$DD$HH00.nc                PARDF_DAVG              $YYYY/$MM/$DD/$HH EY xy W/m2     * - 1 1
 )))HEMCO_RESTART
 108  MEGAN_AEF_ISOP               $ROOT/MEGAN/v2018-05/MEGAN2.1_EF.geos.025x03125.nc      AEF_ISOPRENE            1985/1/1/0        C xy kgC/m2/s * 61 1 1
 108  MEGAN_AEF_MBOX               $ROOT/MEGAN/v2018-05/MEGAN2.1_EF.geos.025x03125.nc      AEF_MBO                 1985/1/1/0        C xy kgC/m2/s * 64 1 1
@@ -3496,18 +3496,18 @@ VerboseOnCores:              root       # Accepted values: root all
 # --- GEOS-Chem restart file ---
 #==============================================================================
 (((GC_RESTART
-* SPC_           ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 SpeciesRst_?ALL?    $YYYY/$MM/$DD/$HH EFYO xyz 1 * - 1 1
-* DELPDRY        ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Met_DELPDRY         $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
-* KPP_HVALUE     ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_KPPHvalue      $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
-* WETDEP_N       ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_WetDepNitrogen $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
-* DRYDEP_N       ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_DryDepNitrogen $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
-* SO2_AFTERCHEM  ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_SO2AfterChem   $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
-* H2O2_AFTERCHEM ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_H2O2AfterChem  $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
-* AEROH2O_SNA    ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_AeroH2OSNA     $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
-* ORVCSESQ       ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_ORVCSESQ       $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
-* JOH            ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_JOH            $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
-* JNO2           ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_JNO2           $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
-* STATE_PSC      ./Restarts/Rockets/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_StatePSC       $YYYY/$MM/$DD/$HH EY   xyz count * - 1 1
+* SPC_           ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 SpeciesRst_?ALL?    $YYYY/$MM/$DD/$HH EFYO xyz 1 * - 1 1
+* DELPDRY        ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Met_DELPDRY         $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
+* KPP_HVALUE     ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_KPPHvalue      $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
+* WETDEP_N       ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_WetDepNitrogen $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
+* DRYDEP_N       ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_DryDepNitrogen $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
+* SO2_AFTERCHEM  ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_SO2AfterChem   $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
+* H2O2_AFTERCHEM ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_H2O2AfterChem  $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
+* AEROH2O_SNA    ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_AeroH2OSNA     $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
+* ORVCSESQ       ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_ORVCSESQ       $YYYY/$MM/$DD/$HH EY   xyz 1 * - 1 1
+* JOH            ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_JOH            $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
+* JNO2           ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_JNO2           $YYYY/$MM/$DD/$HH EY   xy  1 * - 1 1
+* STATE_PSC      ./Restarts/Rockets/FDH_stratonly/GEOSChem.Restart.$YYYY$MM$DD_$HH$MNz.nc4 Chem_StatePSC       $YYYY/$MM/$DD/$HH EY   xyz count * - 1 1
 )))GC_RESTART
 
 #==============================================================================

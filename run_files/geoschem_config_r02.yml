@@ -113,7 +113,7 @@ operations:
     fixed_dyn_heating: true
     seasonal_fdh: false
     fdh_to_toa: false
-    read_dyn_heating: false
+    read_dyn_heating: true
     co2_ppmv: 390.0
 
   transport:

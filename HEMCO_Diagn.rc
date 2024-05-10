@@ -759,4 +759,22 @@ HcoConvectiveCloudTopHeight     -1 103 -1 -1 2 level           Convective_cloud_
 #InvIODINE_HOI        HOI    120  -1  -1  2   kg/m2/s  HOI_emission_flux_from_INORG_IODINE_extension
 #InvIODINE_I2         I2     120  -1  -1  2   kg/m2/s  I2_emission_flux_from_INORG_IODINE_extension
 
+#=============================
+# Rocket Emissions
+#=============================
+
+EmisNO_Rocket           NO     0      6   -1   3   kg  NOx_emission_flux_from_rockets
+EmisH2O_Rocket          H2O    0      6   -1   3   kg  H2O_emission_flux_from_rockets
+EmisBCPI_Rocket         BCPI   0      6   -1   3   kg  BCPI_emission_flux_from_rockets
+EmisBCPO_Rocket         BCPO   0      6   -1   3   kg  BCPO_emission_flux_from_rockets
+EmisCl_Rocket           Cl     0      6   -1   3   kg  Cl_emission_flux_from_rockets
+EmisHCl_Rocket          HCl    0      6   -1   3   kg  HCl_emission_flux_from_rockets
+EmisCl2_Rocket          Cl2    0      6   -1   3   kg  Cl2_emission_flux_from_rockets
+EmisCO_Rocket           CO     0      6   -1   3   kg  CO_emission_flux_from_rockets
+EmisAl2O3_SMF_Rocket    AL2O3  0      6   -1   3   kg  Al2O3_SMF_emission_flux_from_rockets
+EmisAl2O3_DST1_Rocket   DST1   0      6   -1   3   kg  Al2O3_DST1_emission_flux_from_rockets
+EmisAl2O3_DST2_Rocket   DST2   0      6   -1   3   kg  Al2O3_DST2_emission_flux_from_rockets
+EmisAl2O3_DST3_Rocket   DST3   0      6   -1   3   kg  Al2O3_DST3_emission_flux_from_rockets
+EmisAl2O3_DST4_Rocket   DST4   0      6   -1   3   kg  Al2O3_DST4_emission_flux_from_rockets
+
 #EOC

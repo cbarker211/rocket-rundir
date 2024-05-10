@@ -16,7 +16,7 @@
 #      in the OutputDir sub-folder of this run directory.
 #
 #============================================================================
-EXPID:  ./OutputDir/Rockets/GEOSChem
+EXPID:  ./OutputDir/Rockets/no_SA/GEOSChem
 
 #==============================================================================
 # %%%%% COLLECTION NAME DECLARATIONS %%%%%
@@ -71,7 +71,7 @@ COLLECTIONS: 'Restart',
 #
 # Available for all simulations
 #==============================================================================
-  Restart.filename:           './Restarts/Rockets/GEOSChem.Restart.%y4%m2%d2_%h2%n2z.nc4',
+  Restart.filename:           './Restarts/Rockets/no_SA/GEOSChem.Restart.%y4%m2%d2_%h2%n2z.nc4',
   Restart.frequency:          00000100 000000
   Restart.duration:           00000100 000000
   Restart.mode:               'instantaneous'
