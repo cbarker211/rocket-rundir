@@ -9,12 +9,8 @@ tracerinfo.dat
 geos
 core.*
 initial_GEOSChem_rst*
-OutputDir/Baseline/GEOSChem.*nc4*
-OutputDir/Rockets/GEOSChem.*nc4*
-OutputDir/Spinup/GEOSChem.*nc4*
-OutputDir/Baseline/HEMCO_diagnostics*
-OutputDir/Rockets/HEMCO_diagnostics*
-OutputDir/Spinup/HEMCO_diagnostics*
+OutputDir/**/GEOSChem.*nc4*
+OutputDir/**/HEMCO_diagnostics*
 CodeDir
 build
 Plots
@@ -28,3 +24,5 @@ run_gcclassic*
 build_info
 Heating_Baseline
 Restarts/**/GEOSChem.Restart.*
+Restarts/**/HEMCO_restart.*
+OutputDir/__pycache__/
